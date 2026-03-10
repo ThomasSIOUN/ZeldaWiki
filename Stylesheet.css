@@ -1,0 +1,15 @@
+.entete {
+    color: #1e7f3b;
+    font-size: 62px;
+}
+.Page {
+    background-color: #F4ECD8;
+}
+.Accroche {
+    font-size: 35px;
+    color: #1c1c1c
+}
+.baspage {
+    footer {position: absolute; bottom: 0;}
+    background-color: aqua;
+}
