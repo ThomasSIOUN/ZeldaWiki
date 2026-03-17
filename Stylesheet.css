@@ -1,15 +1,113 @@
-.entete {
-    color: #1e7f3b;
-    font-size: 62px;
+/* --- VARIABLES ZELDA --- */
+:root {
+    --forest-green: #064439;   /* Vert profond Tenue Link */
+    --emerald-green: #2d6a4f;  /* Vert de la nature */
+    --triforce-gold: #d4af37;  /* Or de la Triforce */
+    --parchment-beige: #f5f5dc;/* Fond Beige du CdC */
+    --ancient-creme: #fffdf5;  /* Blanc crème du CdC */
+    --deep-brown: #5d4037;     /* Marron cuir/bois */
 }
-.Page {
-    background-color: #F4ECD8;
+
+/* --- GÉNÉRAL --- */
+body {
+    background-color: var(--parchment-beige);
+    color: var(--deep-brown);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
 }
-.Accroche {
-    font-size: 35px;
-    color: #1c1c1c
+
+/* --- PJ2 : HEADER TOP --- */
+.hylian-header {
+    background-color: var(--forest-green);
+    border-bottom: 5px solid var(--triforce-gold);
 }
-.baspage {
-    footer {position: absolute; bottom: 0;}
-    background-color: aqua;
+
+.triforce-text {
+    color: var(--triforce-gold);
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.hylian-subtitle {
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+/* --- NAVBAR LONGUEUR (Style Microsoft) --- */
+.custom-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+}
+
+.navbar-nav {
+    flex-direction: row !important; /* Force l'horizontalité demandée */
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 20px !important;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--forest-green) !important;
+    border-bottom: 3px solid var(--triforce-gold);
+    background-color: var(--ancient-creme);
+}
+
+.search-label {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* --- BLOCS ARTICLES (Maquette PJ2) --- */
+.article-box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--ancient-creme);
+}
+
+.hylian-title {
+    color: var(--forest-green);
+    font-weight: bold;
+    border-left: 4px solid var(--triforce-gold);
+    padding-left: 15px;
+}
+
+.bg-creme {
+    background-color: var(--ancient-creme);
+}
+
+.source-tag {
+    font-size: 0.8rem;
+    color: var(--emerald-green);
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+/* --- PJ2 : FOOTER --- */
+.hylian-footer {
+    background-color: var(--forest-green);
+    color: white;
+    border-top: 5px solid var(--triforce-gold);
+}
+
+.gold-text {
+    color: var(--triforce-gold);
+    letter-spacing: 2px;
+}
+
+/* Sécurité pour les listes si Bootstrap bug */
+ul {
+    list-style: none;
+    padding: 0;
 }
