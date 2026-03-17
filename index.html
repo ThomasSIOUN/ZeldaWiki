@@ -1,21 +1,89 @@
-<html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Zelda Wiki Accueil</title>
-    <link rel="stylesheet" href="bootstrap_dl/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Triforce - Accueil</title>
+    <!-- On garde ton chemin local Bootstrap -->
+    <link rel="stylesheet" href="Style/bootstrap_dl/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/Stylesheet.css">
 </head>
-<body class="Page">
-    <header class="entete">
-        <p><B><em><center>Zelda Wiki</center></em></B></p>
+<body>
+
+    <!-- PJ2 : Titre/Logo en haut -->
+    <header class="hylian-header text-center py-5">
+        <div class="container">
+            <h1 class="display-3 triforce-text">WIKI TRIFORCE</h1>
+            <p class="hylian-subtitle text-uppercase">L'Encyclopédie de The legend of Zelda</p>
+        </div>
     </header>
-    <p class="Accroche">Bienvenue sur Zelda Wiki, un wiki qui vous aidera tout au long de vos aventure hyliennes.<br> Vous trouverez ici des solutions, des astuces, des anecdotes et plus encore... alors balladez-vous!</p>
-    <footer class="baspage">
-        <p><a href=https://thomassioun.github.io/ZeldaWiki/Zelda_Wiki_contact.html>Contact</a></p>
+
+    <!-- PJ2 : Navbar en longueur (Style Microsoft) -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container-fluid px-lg-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chronique</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Forums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Archive</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+                <div class="navbar-nav ms-auto d-flex align-items-center">
+                    <span class="search-label d-none d-md-block">Chercher un objet...</span>
+                    <span class="px-2">🔍</span>
+                    <span class="px-2">👤</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PJ2 : Contenu alterné Image/Texte -->
+    <main class="container my-5">
+        
+        <!-- Bloc 1 : Image G / Texte D (Contenu CdC : Objets & Quêtes) -->
+        <section class="row mb-5 g-0 align-items-center article-box shadow-sm">
+            <div class="col-md-5">
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/600x400/064439/D4AF37?text=Encyclopédie+Zelda" class="img-fluid w-100 h-100" alt="Encyclopédie">
+                </div>
+            </div>
+            <div class="col-md-7 p-4 p-md-5 bg-creme">
+                <h2 class="hylian-title mb-3">Encyclopédie des Objets</h2>
+                <p>Retrouvez une base de données complète sur les objets légendaires : du Grappin à l'Épée de Légende. Ce site informatif centralise tout le lore nécessaire aux aventuriers.</p>
+                <div class="source-tag mt-4">Source : Archives d'Hyrule</div>
+            </div>
+        </section>
+
+        <!-- Bloc 2 : Texte G / Image D (Contenu CdC : Support & Lore) -->
+        <section class="row mb-5 g-0 align-items-center article-box shadow-sm">
+            <div class="col-md-7 p-4 p-md-5 bg-creme order-2 order-md-1">
+                <h2 class="hylian-title mb-3">Support & Gestion de Tickets</h2>
+                <p>Un problème technique ? Notre système de ticket permet de contacter l'équipe support. Idéal pour s'informer ou résoudre des soucis d'accès à l'encyclopédie.</p>
+                <div class="source-tag mt-4">Source : Équipe Wiki Triforce</div>
+            </div>
+            <div class="col-md-5 order-1 order-md-2">
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/600x400/2D6A4F/F5F5DC?text=Système+de+Support" class="img-fluid w-100 h-100" alt="Support">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PJ2 : Bas de page -->
+    <footer class="hylian-footer py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">- Conditions d'utilisations -</p>
+            <p class="mb-1 small">Auteur : Votre Nom - Année : 2025 - Informations générales</p>
+            <p class="mb-0 fw-bold gold-text">(BAS DE PAGE)</p>
+        </div>
     </footer>
+
+    <!-- JS Bootstrap Local -->
+    <script src="Style/bootstrap dl/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
-
+</html>
